@@ -1,0 +1,41 @@
+.personal{
+    background-color: #edf3f8;
+    padding-bottom: 80px;
+}
+.personal__item{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.personal_img{
+    margin-bottom: 33px;
+    max-width: 106px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.personal_title{
+    margin-bottom: 16px;
+    color: #36536b;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.personal_text{
+    @include text;
+
+
+}
+@media screen and (min-width: 768px) {
+    .personal__list{
+        display: flex;
+        gap: 10px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .personal__list{
+        gap: 30px;
+    }
+    .personal__item{
+        max-width: 350px;
+
+    }
+}

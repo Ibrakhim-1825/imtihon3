@@ -1,0 +1,35 @@
+@mixin text  {
+    color: $sunJuanBlue;
+    font-family: Public Sans;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    cursor: pointer;
+}
+
+@mixin button_header {
+    padding: 16px 24px 15px 25px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -1#36536b40.25;
+    background-color: $darkPink;
+    color: #fff;
+
+    cursor: pointer;
+    &:hover{
+        background-color: $charmPink;
+    }
+}
+
+
+@mixin about_btn {
+    background-color: transparent;
+    border: 1px solid $waterWhite;
+    border-radius: 24px;
+    padding: 16px 32px 14px 32px;
+    color: #fff;
+
+    &:hover{
+        color:black;
+        background-color: $waterWhite;
+    }
+}

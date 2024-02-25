@@ -1,0 +1,163 @@
+.intro {
+    background-color:  #edf3f8;;
+
+    background-repeat: no-repeat;
+    background-image: url("/img/hero-mobile-bg.svg");
+    background-position: center top;
+    background-size: contain;
+
+}
+
+.intro__block {
+    padding-top: 130px;
+    padding-bottom: 80px;
+    text-align: center;
+
+}
+
+.intro__img {
+    margin-bottom: 35px;
+    display: inline-block;
+}
+
+.intro__btn {
+    @include button-header;
+    display: inline-block;
+    width: 327px;
+    justify-content: center;
+}
+
+.intro__input {
+    width: 327px;
+    padding: 16px 27px 14px 27px;
+    border-radius: 24px;
+    box-shadow: 10px 10px 25px -10px #36536b40;
+    background-color: transparent;
+    color: $juanBlue;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+    margin-bottom: 16px;
+    color: black;
+    margin-top: 24px;
+    outline: none;
+
+    &::placeholder {
+        color: #6C8294 ;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 18px;
+
+    }
+
+
+}
+
+.intro__title {
+    color: $juanBlue;
+    font-family: DM Serif Display;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.intro__form {
+    margin-bottom: 24px;
+}
+
+.intro__text {
+    color: #6c8294;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 18px;
+
+
+}
+
+.intro__ex {
+    color: #6C8294;
+}
+
+@media screen and (min-width:768px) {
+    .intro__title {
+        color: #36536b;
+        font-family: DM Serif Display;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 56px;
+
+    }
+    .intro{
+        background-image: url('/img/hero-tab-bg.svg');
+    }
+    
+
+    .intro__btn {
+        display: none;
+    }
+
+    .intro__form {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 455px;
+        border-radius:24px;
+        box-shadow: 10px 10px 25px -10px #36536b40;
+        background-color: #fbfcfe;
+        margin-top: 30px;
+
+        input{
+            box-shadow: unset;
+            border: none;
+            width: unset;
+            margin: 0;
+        }
+
+        button{
+            padding: 16px 24px;
+            display: block;
+            width: unset;
+            @include button-header;
+            display: inline-block;
+            justify-content: center;
+        }
+    }
+
+}
+@media screen and (min-width: 992px) {
+
+    .intro{
+        padding-top: 86px;
+        background-image: url('/img/hero-pc-bg.svg');
+        background-position: right -356px top -10px;
+    }
+    .intro__block{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+        
+    }
+    .intro__form{
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .intro__content{
+        max-width: 539px;
+        text-align: left;
+    }
+    .intro__title{
+        color: rgb(54, 83, 107);
+        font-family: DM Serif Display;
+        font-size: 72px;
+        font-weight: 400;
+        line-height: 72px;
+       
+    }
+    
+
+ 
+    
+}
